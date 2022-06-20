@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Visualizer</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+    <div class="wrap">
+
+        <header>
+            <div class="header_wrap">
+                <div class="logo">
+                    <h1>Audio Visualizer</h1>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="information">
+                <span>Сарбасова Алика Р33212</span>
+
+                <div class="volume_wrap">
+                    <label for="volume">Громкость</label>
+                    <input type="range" id="volume" min="0" max="1" value="0.5" step="0.01">
+                </div>
+                <select id="select_sample_music">
+                    <option value="" hidden>Playlist</option>
+                    <option value="Hikariwomate.mp3">Hikariwomate</option>
+                    <option value="Sayonara.mp3">Sayonara</option>
+                    <option value="Fade.mp3">Alan Walker - Fade</option>
+                    <option value="Hope.mp3">Tobu - Hope</option>
+                    <option value="HeroesTonight.mp3">Janji - Heroes Tonight</option>
+                    <option value="Nekozilla.mp3">Different Heaven - Nekozilla</option>
+                    <option value="Cloud9.mp3">Itro & Tobu - Cloud 9</option>
+                    <option value="SkyHigh.mp3">Elektronomia - Sky High</option>
+                    <option value="load">Загрузить...</option>
+                <select>
+                <input type="file" id="file">
+                <button type="button" id="button_changeColor">Цвет</button>
+                <button type="button" id="button_changeType">Тип</button>
+
+            </div>
+            <canvas id="canvas"></canvas>
+        </main>     
+
+    </div>
+
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+
+</body>
+</html>
